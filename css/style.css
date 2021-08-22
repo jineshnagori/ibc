@@ -23,6 +23,10 @@ section {
   padding: 5% 15% !important;
 }
 
+.first-div {
+  padding: 3% 4% !important;
+}
+
 @media screen and (max-width: 767px) {
   section {
     padding: 5% 5% !important;
@@ -122,7 +126,7 @@ video {
   height: auto;
 }
 
-.formsales {
+.formsales1 {
   border-radius: 20px;
   display: inline-table;
   padding: 20px 40px;
@@ -132,23 +136,23 @@ video {
   -moz-box-shadow: 0px 24px 44px 0px rgba(190, 114, 99, 0.37);
   box-shadow: 0px 24px 44px 0px rgba(190, 114, 99, 0.37);
 }
-.formsales h1 {
+.formsales1 h1 {
   color: #5d5845;
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 28px;
   text-align: center;
 }
-.formsales input,
+.formsales1 input,
 select {
   border: 1px #fcbc44 solid !important;
 }
-.formsales .boder_lft {
+.formsales1 .boder_lft {
   border-left: 0px !important;
   border-top-right-radius: 2rem !important;
   border-bottom-right-radius: 2rem !important;
 }
-.formsales .boder_lftradius {
+.formsales1 .boder_lftradius {
   width: 120px;
   border-bottom-left-radius: 2rem !important;
   border-top-left-radius: 2rem !important;
@@ -157,7 +161,7 @@ select {
 .curve_corner {
   border-radius: 2rem !important;
 }
-.formsales button {
+.formsales1 button {
   width: 200px;
   position: relative;
   top: 15px;
@@ -169,9 +173,9 @@ select {
   font-weight: 700;
   background: #fcbc44;
 }
-.formsales .input-group {
+.formsales1 .input-group {
   margin-bottom: 1rem;
 }
-.formsales .form-group {
+.formsales1 .form-group {
   margin-bottom: 10px;
 }
