@@ -65,6 +65,10 @@ strong {
   color: #fff;
 }
 
+.card-timer {
+  padding: 20% !important;
+}
+
 #bg-1 .card {
   background-color: #112934;
 }
