@@ -20,7 +20,7 @@ section {
     }
 }
 
-#section-1, #section-7 {
+#section-1, #section-6 {
     background-color: #02131b;
     color: #fff;
 }
@@ -33,8 +33,13 @@ strong {
     background-color: #112934;
 }
 
-#section-7 .card {
+#section-6 .card {
     background-color: #112934;
+}
+
+#section-5 .card {
+    background-color: #112934;
+    color: #fff;
 }
 
 .checkbox-card {

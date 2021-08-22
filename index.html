@@ -144,8 +144,8 @@
         </div>
     </section>
 
-    <!-- Section 6 -->
-    <section id="section-6" class="container-fluid">
+    <!-- Section 4 -->
+    <section id="section-4" class="container-fluid">
         <div class="row">
             <div class="col-lg-12 col-md-12 pt-4">
                 <h1 class="text-center">You are not the first one to join</h1>
@@ -185,8 +185,54 @@
         </div>
     </section>
 
-    <!-- Section 7 -->
-    <section id="section-7" class="container-fluid">
+    <!-- Section 5 -->
+    <section id="section-5" class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 pt-4">
+                <h1 class="text-center">Time Is Running Out. Grab Your Spot Fast!</h1>
+            </div>
+            <div class="col-lg-3 col-6 col-md-3 pb-2 pt-2">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 id="days" class="card-title"></h5>
+                        <p class="card-text">Days</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6 col-md-3 pb-2 pt-2">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 id="hours" class="card-title"></h5>
+                        <p class="card-text">Hours</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6 col-md-3 pb-2 pt-2">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 id="minutes" class="card-title"></h5>
+                        <p class="card-text">Minutes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6 col-md-3 pb-2 pt-2">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 id="seconds" class="card-title"></h5>
+                        <p class="card-text">Seconds</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 pt-4">
+                <a href="register" class="btn btn-primary d-block">
+                    <h4>Register Now</h4>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6 -->
+    <section id="section-6" class="container-fluid">
         <div class="row">
             <div class="col-lg-12 col-md-12 pt-4">
                 <h1 class="text-center">Meet Your Guru</h1>
@@ -246,6 +292,29 @@
         </div>
     </section>
 
+
+    <script>
+        (function () {
+        const second = 1000,
+                minute = second * 60,
+                hour = minute * 60,
+                day = hour * 24;
+
+        let birthday = "Aug 23, 2021 00:00:00",
+            countDown = new Date(birthday).getTime(),
+            x = setInterval(function() {    
+
+                let now = new Date().getTime(),
+                    distance = countDown - now;
+
+                document.getElementById("days").innerText = Math.floor(distance / (day)),
+                document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+                document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+                document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+                //seconds
+            }, 0)
+        }());
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
         crossorigin="anonymous"></script>
