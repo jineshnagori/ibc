@@ -48,6 +48,11 @@ strong {
   color: #ff8c00;
 }
 
+#section-2 .card {
+  background-color: #112934;
+  color: #fff;
+}
+
 #bg-1 .card {
   background-color: #112934;
 }
@@ -75,7 +80,7 @@ button:focus {
 }
 
 .btn {
-  background-color: #ff8c00 !important;
+  background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%) !important;
   border: none !important;
 }
 
