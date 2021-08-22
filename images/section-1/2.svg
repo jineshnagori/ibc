@@ -1,0 +1,20 @@
+<svg id="icon_group" data-name="icon/group" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-8.704" y1="-3.54" x2="4.528" y2="0.264" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00bf72"/>
+      <stop offset="1" stop-color="#00acb4"/>
+    </linearGradient>
+  </defs>
+  <rect id="Rectangle_203" data-name="Rectangle 203" width="40" height="40" fill="none"/>
+  <g id="stars" transform="translate(5 -25.538)">
+    <g id="Group_257" data-name="Group 257" transform="translate(7.349 44.305)">
+      <path id="Path_100" data-name="Path 100" d="M137.759,242.608l-4.791-2.52-4.791,2.52.915-5.337-3.876-3.779,5.356-.778,2.4-4.855,2.4,4.855,5.356.778-3.876,3.779Z" transform="translate(-125.215 -227.86)" fill="url(#linear-gradient)"/>
+    </g>
+    <g id="Group_258" data-name="Group 258" transform="translate(0 32.86)">
+      <path id="Path_101" data-name="Path 101" d="M11.189,46.015,6.915,43.768,2.641,46.015l.816-4.76L0,37.885l4.778-.695L6.915,32.86l2.137,4.331,4.778.695-3.457,3.37Z" transform="translate(0 -32.86)" fill="url(#linear-gradient)"/>
+    </g>
+    <g id="Group_259" data-name="Group 259" transform="translate(16.221 32.86)">
+      <path id="Path_102" data-name="Path 102" d="M287.555,46.015l-4.274-2.247-4.274,2.247.816-4.76-3.457-3.37,4.778-.695,2.137-4.331,2.137,4.331,4.778.695-3.457,3.37Z" transform="translate(-276.366 -32.86)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>

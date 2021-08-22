@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    padding: 5% 15% !important;
+}
+
+@media screen and (max-width: 767px) {
+    section {
+        padding: 5% 5% !important;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    section {
+        padding: 5% 5% !important;
+    }
+}
+
+#section-1, #section-7 {
+    background-color: #02131b;
+    color: #fff;
+}
+
+strong {
+    color: #ffb800;
+}
+
+#section-1 .card {
+    background-color: #112934;
+}
+
+#section-7 .card {
+    background-color: #112934;
+}
+
+.checkbox-card {
+    background-color: #fafafa !important;
+    border: none !important;
+}
+
+.btn {
+    background-color: #1098ad !important;
+    border: none !important;
+}
+
+#section-3 {
+    background-color: #FDFCFD;
+}
+
+.service-card {
+    box-shadow: 0 0 32px 0 rgb(0 0 0 / 3%);
+    border: none !important;
+}
+
+.workshop-card {
+    background-color: #fafafa !important;
+    border: none !important;
+}
+
+#section-5 {
+    background-color: #FDFCFD;
+}
+
+span {
+    color: #2ba56e;
+    font-size: 13px;
+}
+
+video {
+    object-fit: cover;
+}
+
+#section-5-img {
+    width: 100%;
+    height: auto;
+}
