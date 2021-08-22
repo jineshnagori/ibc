@@ -10,6 +10,15 @@ body {
   font-family: 'Poppins', sans-serif !important;
 }
 
+h4.underline {
+  width: 300px;
+  height: 3px;
+  background-color: #eb6d08;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 section {
   padding: 5% 15% !important;
 }
@@ -26,25 +35,24 @@ section {
   }
 }
 
-#section-1,
-#section-7 {
+#bg-1 {
   background-color: #02131b;
   color: #fff;
+}
+
+#bg-2 {
+  background-color: #fef5ee;
 }
 
 strong {
   color: #ff8c00;
 }
 
-#section-1 .card {
+#bg-1 .card {
   background-color: #112934;
 }
 
-#section-7 .card {
-  background-color: #112934;
-}
-
-#section-6 .card {
+.section-3 .card {
   background-color: #112934;
   color: #fff;
 }
