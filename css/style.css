@@ -1,91 +1,158 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 section {
-    padding: 5% 15% !important;
+  padding: 5% 15% !important;
 }
 
 @media screen and (max-width: 767px) {
-    section {
-        padding: 5% 5% !important;
-    }
+  section {
+    padding: 5% 5% !important;
+  }
 }
 
 @media screen and (max-width: 991px) {
-    section {
-        padding: 5% 5% !important;
-    }
+  section {
+    padding: 5% 5% !important;
+  }
 }
 
-#section-1, #section-7 {
-    background-color: #02131b;
-    color: #fff;
+#section-1,
+#section-7 {
+  background-color: #02131b;
+  color: #fff;
 }
 
 strong {
-    color: #FF8C00;
+  color: #ff8c00;
 }
 
 #section-1 .card {
-    background-color: #112934;
+  background-color: #112934;
 }
 
 #section-7 .card {
-    background-color: #112934;
+  background-color: #112934;
 }
 
 #section-6 .card {
-    background-color: #112934;
-    color: #fff;
+  background-color: #112934;
+  color: #fff;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+button:focus {
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .checkbox-card {
-    background-color: #fafafa !important;
-    border: none !important;
+  background-color: #fafafa !important;
+  border: none !important;
 }
 
 .btn {
-    background-color: #FF8C00 !important;
-    border: none !important;
+  background-color: #ff8c00 !important;
+  border: none !important;
 }
 
 #section-3 {
-    background-color: #FDFCFD;
+  background-color: #fdfcfd;
 }
 
 .service-card {
-    box-shadow: 0 0 32px 0 rgb(0 0 0 / 3%);
-    border: none !important;
+  box-shadow: 0 0 32px 0 rgb(0 0 0 / 3%);
+  border: none !important;
 }
 
 .benefit-card {
-    box-shadow: 0 0 32px 0 rgb(0 0 0 / 3%);
-    border: none !important;
-    background-color: #112934 !important;
+  box-shadow: 0 0 32px 0 rgb(0 0 0 / 3%);
+  border: none !important;
+  background-color: #112934 !important;
 }
 
 .workshop-card {
-    background-color: #fafafa !important;
-    border: none !important;
+  background-color: #fafafa !important;
+  border: none !important;
 }
 
 #section-5 {
-    background-color: #FDFCFD;
+  background-color: #fdfcfd;
 }
 
 span {
-    color: #FF8C00;
-    font-size: 13px;
+  color: #ff8c00;
+  font-size: 13px;
 }
 
 video {
-    object-fit: cover;
+  object-fit: cover;
 }
 
 #section-5-img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
+}
+
+.formsales {
+  border-radius: 20px;
+  display: inline-table;
+  padding: 20px 40px;
+  background-color: #fff;
+  margin-top: 20px;
+  -webkit-box-shadow: 0px 24px 44px 0px rgba(190, 114, 99, 0.37);
+  -moz-box-shadow: 0px 24px 44px 0px rgba(190, 114, 99, 0.37);
+  box-shadow: 0px 24px 44px 0px rgba(190, 114, 99, 0.37);
+}
+.formsales h1 {
+  color: #5d5845;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 28px;
+  text-align: center;
+}
+.formsales input,
+select {
+  border: 1px #fcbc44 solid !important;
+}
+.formsales .boder_lft {
+  border-left: 0px !important;
+  border-top-right-radius: 2rem !important;
+  border-bottom-right-radius: 2rem !important;
+}
+.formsales .boder_lftradius {
+  width: 120px;
+  border-bottom-left-radius: 2rem !important;
+  border-top-left-radius: 2rem !important;
+  border: 1px #fcbc44 solid !important;
+}
+.curve_corner {
+  border-radius: 2rem !important;
+}
+.formsales button {
+  width: 200px;
+  position: relative;
+  top: 15px;
+  font-size: 20px;
+  border-radius: 2rem !important;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  font-weight: 700;
+  background: #fcbc44;
+}
+.formsales .input-group {
+  margin-bottom: 1rem;
+}
+.formsales .form-group {
+  margin-bottom: 10px;
 }
