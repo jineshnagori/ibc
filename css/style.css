@@ -317,6 +317,10 @@ select {
   margin-bottom: 10px;
 }
 
+#pbutton h4, #pbutton p, #mbutton h4 {
+  margin-bottom: 0;
+}
+
 @media screen and (min-width: 767px) {
   #mbutton {
     display: none !important;
