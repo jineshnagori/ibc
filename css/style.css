@@ -328,6 +328,9 @@ select {
   .mtext {
     display: none !important;
   }
+  .mhero {
+    display: none !important;
+  }
   #pcol {
     display: flex;
     justify-content: center;
@@ -340,6 +343,9 @@ select {
     display: none !important;
   }
   .ptext {
+    display: none !important;
+  }
+  .phero {
     display: none !important;
   }
   #pform {

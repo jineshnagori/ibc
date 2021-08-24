@@ -387,16 +387,6 @@
                     </video>
                 </div>
             </div>
-            <div class="col-lg-12 col-md-12 pt-4">
-                <a data-toggle="modal" data-target="#myModal" id="pbutton" class="btn btn-primary d-block">
-                    <h4>Enquire Now to Start Your Startup</h4>
-                    <p>and avoid mistakes that leads to startup failure</p>
-                </a>
-                <a data-toggle="modal" data-target="#myModal" id="mbutton" class="btn btn-primary d-block">
-                    <h4>Enquire Now</h4>
-                    <p>Click Here!</p>
-                </a>
-            </div>
         </div>
     </section>
 
@@ -466,7 +456,8 @@
             <div class="col-lg-12 col-md-12 pt-4">
                 <div class="row">
                     <div class="col-lg-3 col-12 col-md-12 pb-2 d-flex justify-content-center">
-                        <img style="border-radius:10px" class="img-fluid" src="images/hero.jpg">
+                        <img style="border-radius:10px" class="img-fluid phero" src="images/hero.jpg">
+                        <img style="border-radius:10px" class="img-fluid mhero" src="images/hero.png">
                     </div>
                     <div class="mcard col-lg-2 col-3 col-md-3 pb-2">
                         <div class="card text-center">
@@ -665,7 +656,7 @@
 
         function getSeconds() {
             var nowDate = new Date();
-            var dy = 6; //Sunday through Saturday, 0 to 6
+            var dy = 2; //Sunday through Saturday, 0 to 6
             var countertime = new Date(nowDate.getFullYear(), nowDate.getMonth(), nowDate.getDate(), 20, 0, 0); //20 out of 24 hours = 8pm
 
             var curtime = nowDate.getTime(); //current time
