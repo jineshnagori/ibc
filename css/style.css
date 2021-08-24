@@ -95,7 +95,7 @@ button:focus {
 }
 
 .checkbox-card {
-  background-color: #fafafa !important;
+  background-color: #f0f0f0 !important;
   border: none !important;
 }
 
@@ -208,6 +208,9 @@ select {
   #mbutton {
     display: none !important;
   }
+  .mtext {
+    display: none !important;
+  }
   #pcol {
     display: flex;
     justify-content: center;
@@ -219,11 +222,34 @@ select {
   #pbutton {
     display: none !important;
   }
+  .ptext {
+    display: none !important;
+  }
   #pform {
+    display: none !important;
+  }
+  .pinfo {
     display: none !important;
   }
   #mlogo {
     width: 155px;
     height: auto;
+  }
+  .mcard {
+    padding-right: 1px !important;
+    padding-left: 1px !important;
+  }
+  .mcard .card-body {
+    padding: 1rem 0 !important;
+  }
+  .mcard h5 {
+    font-size: 18px;
+  }
+  .mcard p {
+    font-size: 9px;
+    margin-bottom: 0;
+  }
+  .mcard img {
+    width: 14px;
   }
 }
