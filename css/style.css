@@ -317,7 +317,7 @@ select {
   margin-bottom: 10px;
 }
 
-#pbutton h4, #pbutton p, #mbutton h4 {
+#pbutton h4, #pbutton p, #mbutton h4, #mbutton p {
   margin-bottom: 0;
 }
 
@@ -353,11 +353,11 @@ select {
     height: auto;
   }
   .mcard {
-    padding-right: 1px !important;
-    padding-left: 1px !important;
+    padding-right: 3px !important;
+    padding-left: 3px !important;
   }
   .mcard .card-body {
-    padding: 1rem 0 !important;
+    padding: 10px 0 !important;
   }
   .mcard h5 {
     font-size: 18px;
