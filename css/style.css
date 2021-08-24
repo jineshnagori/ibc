@@ -213,33 +213,31 @@ border-radius: 0;
 }
 
 .btn {
-  background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%) !important;
+  background-image: linear-gradient(105deg, #ff4e00, #ec9f05, #ff9100, #ff4e00, #e08700, #ec9f05, #ff4e00, #ec9f05, #ff0000) !important;
   border: none !important;
   border-radius: 2rem !important;
-  animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both infinite;
-  transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
-  perspective: 1000px;
+  -webkit-animation: rainbow 2s ease infinite;
+  -z-animation: rainbow 2s ease infinite;
+  -o-animation: rainbow 2s ease infinite;
+  animation: rainbow 2s ease infinite alternate;
+  background-size: 200% 200%;
 }
 
-@keyframes shake {
-  10%,
-  90% {
-    transform: translate3d(-1px, 0, 0);
-  }
-  20%,
-  80% {
-    transform: translate3d(2px, 0, 0);
-  }
-  30%,
-  50%,
-  70% {
-    transform: translate3d(-4px, 0, 0);
-  }
-  40%,
-  60% {
-    transform: translate3d(4px, 0, 0);
-  }
+@-webkit-keyframes rainbow {
+  0%{background-position:0% 100%}
+  100%{background-position:100% 0%}
+}
+@-moz-keyframes rainbow {
+  0%{background-position:0% 100%}
+  100%{background-position:100% 0%}
+}
+@-o-keyframes rainbow {
+  0%{background-position:0% 100%}
+  100%{background-position:100% 0%}
+}
+@keyframes rainbow { 
+  0%{background-position:0% 100%}
+  100%{background-position:100% 0%}
 }
 
 #section-3 {
