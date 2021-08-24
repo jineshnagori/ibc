@@ -365,4 +365,7 @@ select {
   .mcard img {
     width: 14px;
   }
+  .mbox {
+    padding-left: 30px !important;
+  }
 }
