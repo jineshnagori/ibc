@@ -408,11 +408,11 @@
                 <h6 class="text-center mtext">Talk To Our Business Consultant Now!</h6>
                 <h4 class="text-center underline"></h4>
             </div>
-            <div class="row pt-4">
+            <div class="row cd100 pt-4">
                 <div class="col-lg-3 col-3 mcard col-md-3 pb-2 pt-2">
                     <div class="card text-center">
                         <div class="card-body card-timer">
-                            <h1 id="days" class="card-title"></h1>
+                            <h1 id="days" class="days card-title">0</h1>
                             <p class="card-text">Days</p>
                         </div>
                     </div>
@@ -420,7 +420,7 @@
                 <div class="col-lg-3 col-3 mcard col-md-3 pb-2 pt-2">
                     <div class="card text-center">
                         <div class="card-body card-timer">
-                            <h1 id="hours" class="card-title"></h1>
+                            <h1 id="hours" class="hours card-title">24</h1>
                             <p class="card-text">Hours</p>
                         </div>
                     </div>
@@ -428,7 +428,7 @@
                 <div class="col-lg-3 col-3 mcard col-md-3 pb-2 pt-2">
                     <div class="card text-center">
                         <div class="card-body card-timer">
-                            <h1 id="minutes" class="card-title"></h1>
+                            <h1 id="minutes" class="minutes card-title">60</h1>
                             <p class="card-text">Minutes</p>
                         </div>
                     </div>
@@ -436,7 +436,7 @@
                 <div class="col-lg-3 col-3 mcard col-md-3 pb-2 pt-2">
                     <div class="card text-center">
                         <div class="card-body card-timer">
-                            <h1 id="seconds" class="card-title"></h1>
+                            <h1 id="seconds" class="seconds card-title">60</h1>
                             <p class="card-text">Seconds</p>
                         </div>
                     </div>
@@ -693,55 +693,20 @@
     </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <script src="vendor/countdowntime/moment.min.js"></script>
+	<script src="vendor/countdowntime/moment-timezone.min.js"></script>
+	<script src="vendor/countdowntime/moment-timezone-with-data.min.js"></script>
+	<script src="vendor/countdowntime/countdowntime.js"></script>
     <script>
-        var curday;
-        var secTime;
-        var ticker;
-
-        function getSeconds() {
-            var nowDate = new Date();
-            var dy = 2; //Sunday through Saturday, 0 to 6
-            var countertime = new Date(nowDate.getFullYear(), nowDate.getMonth(), nowDate.getDate(), 20, 0, 0); //20 out of 24 hours = 8pm
-
-            var curtime = nowDate.getTime(); //current time
-            var atime = countertime.getTime(); //countdown time
-            var diff = parseInt((atime - curtime) / 1000);
-            if (diff > 0) { curday = dy - nowDate.getDay() }
-            else { curday = dy - nowDate.getDay() - 1 } //after countdown time
-            if (curday < 0) { curday += 7; } //already after countdown time, switch to next week
-            if (diff <= 0) { diff += (86400 * 7) }
-            startTimer(diff);
-        }
-
-        function startTimer(secs) {
-            secTime = parseInt(secs);
-            ticker = setInterval("tick()", 1000);
-            tick(); //initial count display
-        }
-
-        function tick() {
-            var secs = secTime;
-            if (secs > 0) {
-                secTime--;
-            }
-            else {
-                clearInterval(ticker);
-                getSeconds(); //start over
-            }
-
-            var days = Math.floor(secs / 86400);
-            secs %= 86400;
-            var hours = Math.floor(secs / 3600);
-            secs %= 3600;
-            var mins = Math.floor(secs / 60);
-            secs %= 60;
-
-            //update the time display
-            document.getElementById("days").innerHTML = curday;
-            document.getElementById("hours").innerHTML = ((hours < 10) ? "0" : "") + hours;
-            document.getElementById("minutes").innerHTML = ((mins < 10) ? "0" : "") + mins;
-            document.getElementById("seconds").innerHTML = ((secs < 10) ? "0" : "") + secs;
-        }
+        $('.cd100').countdown100({
+			endtimeYear: 0,
+			endtimeMonth: 0,
+			endtimeDate: 0,
+			endtimeHours: 24,
+			endtimeMinutes: 0,
+			endtimeSeconds: 0,
+			timeZone: "" 
+		});
     </script>
     <script>
         $('.owl-carousel').owlCarousel({
@@ -758,11 +723,6 @@
                 }
             }
         })
-    </script>
-    <script>
-        $(document).ready(function () {
-            getSeconds();
-        });
     </script>
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbz52Sc7GW4j37sqcxmCNhe11dtghwgfASTx_IrF9KE7-lMP2Dh0P4t2JkGVj5CAqq6tyg/exec'
