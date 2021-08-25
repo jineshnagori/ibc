@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -47,20 +48,19 @@
                 </video>
             </div>
             <div id="pcol" class="col-lg-4 col-md-12 pt-4">
-                <form method="post" autocomplete="off" name="google-sheet" class="formsales1" id="pform"
-                    accept-charset="utf-8">
+                <form id="enquire_form" method="post" autocomplete="off" name="google-sheet" class="formsales1">
                     <h1>Get In Touch With Us</h1>
                     <div class="form-group">
-                        <input type="text" required="required" name="name" class="form-control curve_corner"
-                            id="exampleInputName" aria-describedby="Name" placeholder="Name" />
+                        <input type="text" required="required" name="name" class="form-control curve_corner" placeholder="Name" />
                     </div>
                     <div class="form-group">
-                        <input type="text" required="required" name="phone" class="form-control curve_corner"
-                            id="exampleInputPhone" aria-describedby="Phone" placeholder="Phone" />
+                        <input type="text" required="required" name="phone" class="form-control curve_corner" placeholder="Phone" />
                     </div>
                     <div class="form-group">
-                        <input type="email" required="required" class="form-control curve_corner" name="email"
-                            id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" />
+                        <input type="email" required="required" class="form-control curve_corner" name="email" placeholder="Email" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" required="required" class="form-control curve_corner" name="city" placeholder="City" />
                     </div>
                     <div class="uk-margin-small-top">
                         <label class="uk-text-small">
@@ -75,10 +75,6 @@
                         </button>
                     </div>
                 </form>
-                <a data-toggle="modal" data-target="#myModal" id="mbutton" class="btn btn-primary d-block">
-                    <h4>Enquire Now</h4>
-                    <p>Click Here!</p>
-                </a>
             </div>
         </div>
     </section>
@@ -440,11 +436,11 @@
                 </div>
             </div>
             <div class="col-lg-12 col-md-12 pt-4">
-                <a data-toggle="modal" data-target="#myModal" id="pbutton" class="btn btn-primary d-block">
+                <a href="#enquire_form" id="pbutton" class="btn btn-primary d-block">
                     <h4>Enquire Now to Start Your Startup</h4>
                     <p>and avoid mistakes that leads to startup failure</p>
                 </a>
-                <a data-toggle="modal" data-target="#myModal" id="mbutton" class="btn btn-primary d-block">
+                <a href="#enquire_form" id="mbutton" class="btn btn-primary d-block">
                     <h4>Enquire Now</h4>
                     <p>Click Here!</p>
                 </a>
@@ -538,54 +534,17 @@
                 </div>
             </div>
             <div class="col-lg-12 col-md-12 pt-4">
-                <a data-toggle="modal" data-target="#myModal" id="pbutton" class="btn btn-primary d-block">
+                <a href="#enquire_form" id="pbutton" class="btn btn-primary d-block">
                     <h4>Enquire Now to Start Your Startup</h4>
                     <p>and avoid mistakes that leads to startup failure</p>
                 </a>
-                <a data-toggle="modal" data-target="#myModal" id="mbutton" class="btn btn-primary d-block">
+                <a href="#enquire_form" id="mbutton" class="btn btn-primary d-block">
                     <h4>Enquire Now</h4>
                     <p>Click Here!</p>
                 </a>
             </div>
         </div>
     </section>
-
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" role="dialog">
-        <div class="modal-dialog">
-
-            <!-- Modal content-->
-            <div class="modal-content">
-                <form method="post" autocomplete="off" name="google-sheet" class="formsales1" accept-charset="utf-8">
-                    <h1>Get In Touch With Us</h1>
-                    <div class="form-group">
-                        <input type="text" required="required" name="name" class="form-control curve_corner"
-                            id="exampleInputName" aria-describedby="Name" placeholder="Name" />
-                    </div>
-                    <div class="form-group">
-                        <input type="text" required="required" name="phone" class="form-control curve_corner"
-                            id="exampleInputPhone" aria-describedby="Phone" placeholder="Phone" />
-                    </div>
-                    <div class="form-group">
-                        <input type="email" required="required" class="form-control curve_corner" name="email"
-                            id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" />
-                    </div>
-                    <div class="uk-margin-small-top">
-                        <label class="uk-text-small">
-                            <input name="py_dd_status" class="uk-checkbox checkbox_val" type="checkbox">&nbsp;&nbsp;I
-                            agree to the <a target="_BLANK"
-                                href="https://www.badabusiness.com/terms-and-conditions">terms and conditions</a>.
-                        </label>
-                    </div>
-                    <div class="form-group text-center">
-                        <button class="btn btn-outline-secondary align-center" type="submit">
-                            Enquire Now
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
 
     <!-- Section 4 -->
     <section class="container-fluid">
@@ -674,11 +633,11 @@
                 <h5 class="text-center mb-3">I'm Sure You Will Love It! 😃</h5>
             </div>
             <div class="col-lg-12 col-md-12 pt-4">
-                <a data-toggle="modal" data-target="#myModal" id="pbutton" class="btn btn-primary d-block">
+                <a href="#enquire_form" id="pbutton" class="btn btn-primary d-block">
                     <h4>Enquire Now to Start Your Startup</h4>
                     <p>and avoid mistakes that leads to startup failure</p>
                 </a>
-                <a data-toggle="modal" data-target="#myModal" id="mbutton" class="btn btn-primary d-block">
+                <a href="#enquire_form" id="mbutton" class="btn btn-primary d-block">
                     <h4>Enquire Now</h4>
                     <p>Click Here!</p>
                 </a>
