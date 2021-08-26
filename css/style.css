@@ -253,6 +253,10 @@ button:focus {
   }
 }
 
+.course-img {
+  object-fit: fill !important;
+}
+
 #section-3 {
   background-color: #fdfcfd;
 }
@@ -412,4 +416,8 @@ select {
   .mbox {
     padding-left: 30px !important;
   }
+}
+
+.owl-dots {
+  display: none !important;
 }
